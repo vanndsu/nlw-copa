@@ -17,9 +17,9 @@ ul{
 body{
 
    background-image: var(--bg);
-   background-color: #black; 
-   background-position: center; 
-   background-size: 125%; 
+   background-color: #031708; 
+   background-position: center;  
+   background-size: cover; 
    background-repeat: no-repeat;
 }
 body *{
