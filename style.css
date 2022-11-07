@@ -4,30 +4,30 @@
   box-sizing: border-box;
 }
 :root{
-  --card-color: #1d1c19;
+  --card-color: #1a1f1b;
   --card-color-primary: #f7dd43;
+  --border-date-color: #0dce3d;
+  --bg: url(./assets/background-green.svg)
 }
-/*body.blue{
 
-  --card-color: blue;
-  --card-color-primary: blue;
-  
-}*/ /*aula 04*/
 ul{
   list-style: none;
 }
-body{
-  background-color: blue;
-  background-image: url(./assets/background-blue.svg);
-  background-position:center ;
 
+body{
+
+   background-image: var(--bg);
+   background-color: #031708; 
+   background-position: center; 
+   background-size: 125%; 
 }
 body *{
   font-family: 'Roboto', sans-serif;
 }
 #app{
   width: fit-content;
-  margin: 52px auto;
+  margin: auto;
+  padding: 52px;
 }
 header{
   margin-bottom: 63px;
@@ -44,7 +44,7 @@ header{
   border-radius: 6px;
   padding: 32px 23px;
   text-align: center; 
-  border-bottom: 2px solid var(--card-color-primary);  
+  border-bottom: 2px solid var(--border-date-color);  
 }
 .card h2{
   display: flex;
@@ -52,7 +52,7 @@ header{
   justify-content: center;
   align-items: center;
   padding: 8px 16px;
-  border: 1px solid rgb(95, 95, 223);
+  border: 1px solid var(--border-date-color);
   border-radius: 6px;
   margin-bottom: 10px;
   width: fit-content;
@@ -89,17 +89,13 @@ header{
 .card:hover{
   transform: scale(1.01);
 }
-.card h2:hover,
-.card ul li strong:hover,
-.card ul li img:hover{
+.card h2:hover{
   transform: scale(1.1);
 }
 .card:hover{
   transition: transform 0.3s;
 }
-.card h2:hover,
-.card ul li strong:hover,
-.card ul li img:hover{
+.card h2:hover{
   transition: transform 0.3s;
 }
 .card{
