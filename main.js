@@ -7,7 +7,6 @@ function createGame(time1,hour,time2){
   </li>
   
   `
-
 }
 
 let delay = -0.2;
@@ -29,14 +28,30 @@ function createCard(date, day,games){
 document.querySelector("#cards").innerHTML = 
   
     
-          createCard('24/11','quinta',createGame('switzerland','07:00','cameroon')+
+          createCard('24/11','quinta',
+          createGame('switzerland','07:00','cameroon')
+          +
           createGame('uruguay','10:00','southkorea')
           +
           createGame('portugal','13:00','gana')
           +
           createGame('brazil','16:00','serbia'))
           +
-          createCard('28/11','segunda',createGame('brazil','13:00','switzerland'))+          
-          createCard('02/12', 'sexta',createGame('cameroon','16:00','brazil'))
- 
-
+            createCard('28/11','segunda',
+            createGame('cameroon','07:00','serbia')
+            +
+            createGame('southkorea','10:00','gana')
+            +
+            createGame('brazil','13:00','switzerland')
+            +
+            createGame('portugal','16:00','uruguay'))
+            +
+              createCard('02/12', 'sexta',
+              createGame('southkorea','12:00','portugal')
+              +
+              createGame('gana','12:00','uruguay')
+              +
+              createGame('serbia','16:00','switzerland')
+              +
+              createGame('cameroon','16:00','brazil')
+              )
